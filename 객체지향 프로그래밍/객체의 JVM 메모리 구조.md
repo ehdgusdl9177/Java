@@ -35,3 +35,24 @@
   
 <img width="323" alt="스크린샷 2022-11-15 오후 4 27 32" src="https://user-images.githubusercontent.com/75515697/201856047-b9accfb8-acd5-4fb4-ac69-42e6c3a4a6ae.png">
 
+## 객체 참조 변수 - String
+- 문자열을 저장하는 Reference type의 class로 Java API(java.lang.*)내에 포함되어 있다.
+- String class는 new 키워드를 사용하는 방법과 new 키워드 없이 생성하는 두 가지 방법을 제공한다.
+- String 문자열은 객체는 Heap Memory내에서도 문자열 리터널 값을 String Pool에 저장해놓고 동일한 문자열을 생성하면 동일한 리터럴 값의 주소를 할당해준다.
+- new로 생성한 경우엔 일반 객체처럼 Heap 영역에 값으로 생성된다.
+- 선언
+  - ```Java
+    ClassName identifier;
+    String myName;
+    ```
+    
+- 문자열 생성 및 값 할당
+- ```Java
+  identifier = new ClassName("문자열");
+  myName = new String("홍길동");
+  
+  String myName = new String("홍길동");
+  String myName = "홍길동";  <-  new 키워드 없이 생성
+  ```
+  
+<img width="326" alt="스크린샷 2022-11-16 오전 9 41 01" src="https://user-images.githubusercontent.com/75515697/202055159-d51bfe88-bb5d-4307-8313-5349ea4271b1.png">
